@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE =Edge">
+    <meta name="viewport" content="width=device-widhth" ,initial>
+    <title>
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(29, 25, 34);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 55px;
+            background-color: rgb(63, 58, 58);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            width: 83%;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 43px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(242, 233, 233);
+        }
+
+        nav ul li a:hover {
+            color: rgb(136, 134, 134);
+            font-size: 1.04;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(94, 87, 87);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: inherit;
+            position: relative;
+            left:35px;
+            width:27% ;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 180px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            width: 50px;
+            font-size: 2rem;
+            margin: -10px;
+
+        }
+        .box1{
+            width: 50%;
+            position: relative;
+            top: 710px;
+            left: 750px;
+            color: grey;
+            font-size: 23px;
+        }
+        .box1 a{
+            text-decoration: none;
+            color: gray;
+        }    
+    
+
+        .rightSection {
+            width: 50px;
+            margin: 0px;
+        }
+
+        .rightSection img {
+            position: relative;
+            left: 50px;
+            width: 90%;
+            margin: -20px;
+        }
+
+        .Grey {
+            color: gray;
+
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: grey;
+        }
+
+        .secondSection {
+            max-width: 85vw;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            height: 30vh;
+        }
+
+        .secondSection>div {
+            width: 110%;
+        }
+
+        .leftsecondSection {
+            width: 100px;
+            font-size: 2rem;
+            margin: 56px 0;
+
+        }
+
+        .rightsecondSection {
+            width: 1149%;
+            margin: 0;
+        }
+
+        .rightsecondSection img {
+            position: relative;
+            left: 50px;
+            width: 70%;
+            margin: 20px;
+            left: 90px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+
+        }
+
+        .secondSection h2 {
+            width: 80%;
+            position: relative;
+            left: 108px;
+            margin: 0 250px;
+            font-size: 1.9rem;
+            margin: 0;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+
+        }
+
+        .thirdSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 96px 0;
+            display: flex;
+        }
+
+        .thirdSection .vertical {
+            height: 96px;
+            display: flex;
+            width: 0.9px;
+            background-color: gray;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            background-color: rgb(29, 25, 34);
+            width: 68px;
+            top: -97px;
+            left: -36px;
+            position: relative;
+        }
+
+        .vertical-title {
+            position: relative;
+            width: 23px;
+            top: 6px;
+            left: -56px;
+
+        }
+
+
+        .vertical-desc {
+            position: relative;
+            top: 75px;
+            color: gray;
+            width: 23px;
+            font-size: 20px;
+            left: -79px;
+
+        }
+
+        .forthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .forthSection>div {
+            width: 56%;
+        }
+
+        .leftforthSection h3 {
+            width: -23px;
+            font-size: 2rem;
+            margin: 56px 0;
+            position: relative;
+            top: -5px;
+
+        }
+
+        .leftforthSection h3 a {
+            text-decoration: none;
+            color: rgb(242, 233, 233);
+
+        }
+
+        .leftforthSection p {
+            width: -75px;
+            font-size: 1rem;
+            margin: 56px 0;
+            position: relative;
+            top: -38px;
+        }
+
+        .leftforthSection img {
+            position: relative;
+            top: 50px;
+
+        }
+        
+        .image-center{
+            width: 80%;
+            position: relative;
+            top: -400px;
+            left: 400px;
+        }
+        .rightforthSection h6{
+            width: -23px;
+            font-size: 2rem;
+            margin: 56px 0;
+            position: relative;
+            top: -440px;
+            left: 410px;
+
+
+        }
+
+        .rightforthSection h6 a {
+            text-decoration: none;
+            color: rgb(242, 233, 233);
+
+        }
+        .bottomforthsection {
+            position: relative;
+            top: -880px;
+            left: 1004px;
+            width: 10%;
+
+        }
+        .bottomforthSection img {
+            position: relative;
+            top: 50px;
+            size: 2rem;
+
+        }
+        
+        .image-center{
+            width: 80%;
+            position: relative;
+            top: -400px;
+            left: 400px
+        }
+        .bottomforthsection h6{
+            width: -23px;
+            font-size: 2rem;
+            margin: 56px 0;
+            position: relative;
+            top: -27px;
+            left: 52px;
+        }
+        .bottomforthsection h6 a{
+            text-decoration: none;
+            color: rgb(242, 233, 233);
+
+        }
+
+        .footer {
+            background-color: rgb(63 58 58);
+            height: 211px;
+            size:2rem;
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 70px 110px;
+            justify-content: space-evenly;
+        }
+
+        .footer>div {
+            width: 2px;
+        }
+
+        .footer h4 {
+            position: relative;
+            margin: 12px 80px;
+            font-size: 1.9rem;
+            top: -4rem;
+        }
+
+        .footer h5 {
+            width: 3px;
+            position: relative;
+            top: -45px;
+            font-size: 2rem;
+        }
+
+        .footer p {
+            position: relative;
+            font-size: 0.5;
+            left: -340px;
+            top: 50px;
+            margin: 0px 30px;
+
+        }
+
+        .footer p1 {
+            position: relative;
+            font-size: 0.5;
+            left: -410px;
+            top: 125px;
+            margin: 50px 30px;
+
+        }
+
+        footer img {
+            position: relative;
+            margin: 50px 12px;
+            width: 100px;
+        }
+
+        .image-bottom {
+            position: relative;
+            top: 90px;
+            margin: 50px 12 px;
+            width: 70px;
+            left: -260px;
+            size: 0.5cm;
+        }
+
+        .image-left {
+            position: relative;
+            width: 57px;
+            top: 21px;
+        }
+
+        .image-right {
+            position: relative;
+            width: 92px;
+            top: -17px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: rgb(26, 26, 26);
+
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {}
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+            .left{
+                width: 39%;
+                font-size:13px ;
+            }
+            .nav ul{
+                position: relative;
+                top: 2px;
+            }
+
+            .leftSection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightSection {
+                position: relative;
+                top: -30px;
+                left: 300px;
+                width: 400px !important;
+            }
+
+            .secondSection {
+                height: fit-content;
+            }
+
+            .thirdSection {
+                height: 21vh;
+            }
+
+            .thirdSectionbox {
+                flex-direction: column;
+                max-width: 80vw;
+                margin: 50px;
+                height: 80vh;
+                display: flex;
+                align-items: center;
+            }
+
+            .thirdSection .vertical {
+                position: absolute;
+                left: 66px;
+            }
+
+            .forthSection {
+                height: fit-content;
+            }
+
+            .footer {
+                background-color: rgb(29, 25, 34);
+                height: fit-content;
+                width: 0px;
+                position: relative;
+                left: 250px;
+            }
+
+            .footer h4 {
+                position: relative;
+                margin: 12px 80px;
+                font-size: 1.9rem;
+                top: -4rem;
+                left: 270px;
+            }
+
+            .image-bottom {
+                position: relative;
+                top: 85px;
+                margin: 50px 12 px;
+                width: 70px;
+                left: 30px;
+                size: 0.5cm;
+            }
+            .rightforthSection{
+                height: 10px;
+            }
+
+            .footer p1 {
+                position: relative;
+                font-size: 0.5;
+                left: -113px;
+                top: 114px;
+                margin: 50px 30px;
+            }
+
+            .footer p {
+                position: relative;
+                font-size: 0.5;
+                left: -57px;
+                top: 50px;
+                margin: 0px 30px;
+                font-size: 10px;
+            }
+            .box1{
+                position: relative;
+                top: 880px;
+                left: 268px;
+                width: 100%;
+                font-size:23px ;
+
+    
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Anurag's Portfolio</div>
+            <div class=box1><a href="valechha (2).pdf">Download Resume</a></div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#firstSection">Home</a></li>
+                <li><a href="#secondSection">About</a></li>
+                <li><a href="#forthSection">Projects</a></li>
+                <li><a href="#footer">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="firstSection">
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi, my name is <span class="Grey">ANURAG VALECHHA</span>
+                    <div> and I am a Passionate</div>
+                    <span id="element"></span>
+                </div>
+                <div class="rightSection"><img src="op.gif" alt="">
+
+                </div>
+            </section>
+        </section>
+        <hr>
+        <section id="secondSection">
+            <section class="secondSection">
+                <div class="leftSecondSection">
+                    <span class="text-gray">HELLO EVERYBODY A LITTLE </span>
+                    <h1>About Myself</h1>
+                    <p>I'm a Freshman, pursuing Computer Science Engineering at university of Cambridge.</p>
+                    <p> I love solving problems using Artificial Intelligence and</p>
+                    <div> represent Data in a meaningful way.</div>
+                </div>
+                <div class="rightsecondSection">
+                    <h2>MY SKILLS</h2> <img src="aa.png" alt="">
+                </div>
+            </section>
+        </section>
+        <hr>
+        <section class="thirdSection">
+            <span class="text-gray">About</span>
+            <h1>My Education</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="bb.png" alt="">
+                    <div class="vertical-title">
+                        High School
+                    </div>
+                    <div class="vertical-desc">
+                        Central Academy (2019)
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="bb.png" alt="">
+                        <div class="vertical-title">
+                            A level
+                        </div>
+                        <div class="vertical-desc">
+                            M.P.S Public School(2021)
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="bb.png" alt="">
+                            <div class="vertical-title">
+                                Skills Certificates
+                            </div>
+                            <div class="vertical-desc">
+                                Coursera
+                            </div>
+                            <div class="vertical">
+                                <img class="image-top" src="bb.png" alt="">
+                                <div class="vertical-title">
+                                    Undergraduation
+                                </div>
+                                <div class="vertical-desc">
+                                    Anglia Ruskin university
+                                </div>
+
+                            </div>
+        </section>
+        <hr>
+        <div id="forthSection">
+            <div class="forthSection">
+                <span class="text-gray">About</span>
+                <h1>My Latest Projects</h1>
+                <div>Projects are the canvas upon which dreams become reality, where innovation meets execution, and
+                    where the future takes shape.</div>
+                <div class="leftforthSection">
+                    <img src="FB.gif" alt="">
+                    <h3> <a href="https://github.com/anuragvalechha/FlappyBIRD"> Flappy BIRD AI</a></h3>
+                </div>
+                <div class="rightforthSection">
+                    <img class="image-center"src="bg.jpg" alt="">
+                    <h6> <a href="https://github.com/anuragvalechha/windows-11">Windows 11 </a></h6>
+                </div>
+                <div class="bottomforthsection">
+                    <img src="logo.png" alt="">
+                    <h6><a href="https://github.com/anuragvalechha/spotify-clone"> spotify-clone</a></h6>
+                </div>
+            </div>
+        </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer">
+
+            <div class="footer">
+                <div class="first"></div>
+                <h4>Anurag's Portfolio</h4>
+                <div class="second"></div>
+                <img class="image-bottom" src="lo.png" alt="">
+                <p>I MAKE THINGS WORK</p>
+                <P1>ALLAHABAD ,INDIA</P1>
+                <a href="mailto:anuragpranj683@gmail.com"><img class="image-left" src="em.png" alt=""></a>
+                <h5>FOLLOW ME: </h5>
+
+                <div class="third"></div>
+                <a href="https://www.instagram.com/anuragvalechha04/"><img src="ins.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/anurag-valechha-602b57259/"> <img src="li.png" alt=""></a>
+                <div class="forth"></div>
+                <a href="https://twitter.com/avi0404avi">><img class="image-right" src="tt.png" alt=""></a>
+                <a href="https://github.com/anuragvalechha"><img src="gg.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Video Editor', 'Web Designer', 'Web Developer','Software Developer','App Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
